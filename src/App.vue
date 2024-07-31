@@ -1,17 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <NavBarComponent />
+    <HomePageComponent />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import NavBarComponent from './components/NavBarComponent.vue';
+import HomePageComponent from './views/HomePageComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    NavBarComponent,
+    HomePageComponent
   }
-}
+};
 </script>
 
 <style>
